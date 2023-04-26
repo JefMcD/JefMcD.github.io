@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project0 - Jef McD Ralston</title>
+    <link rel="icon" href="images/project0.ico">
+    <link rel="stylesheet" href="css/project0-styles.css">
+</head>
+
+<body>
+    <!-- header section containing the top right buttons and the logo -->
+    <header class="header-wrapper">
+            <div class="search-buttons-wrapper">
+                <div class="search-button change-page-button">
+                    <a href="index.html">Return</a>
+                </div>
+            </div>
+
+        <img id="advancedLogo" src="/images/PROJECT-0.png" alt="Project0 Logo">
+        <div class="header-subtitle" >Advanced Search</div>
+    </header>
+
+
+    <!-- The form containing the searchbar section and the two search buttons -->
+    <main class="search-form-wrapper">
+        <div class="search-box-label">
+            Find Pages with ...
+        </div>
+        <form action="https://www.google.co.uk/search" method="GET">
+            <div class="adv-search-wrapper">
+                <div class="adv-search-grid">
+
+                    <label for="all" class ="adv-search-label">all these words:</label>
+                    <input id="all" class="adv-search-field" name="as_q" placeholder="" type="text">
+                    <span class ="adv-deskonly-label">type the important words: star trek captain Kirk</span>
+
+                    <label for="exact" class ="adv-search-label">this exact word or phrase:</label>
+                    <input class="adv-search-field" name="as_epq" placeholder="" type="text">
+                    <span class ="adv-deskonly-label">Put exact words in quotes: "Ferengi"</span>
+
+                    <label for="any" class ="adv-search-label">any of these words:</label>
+                    <input class="adv-search-field" name="as_oq" placeholder="" type="text">
+                    <span class ="adv-deskonly-label">Type OR between all the words you want: <br />Kirk <b>OR</b> Picard</span>
+
+                    <label for="none"  class ="adv-search-label">none of these words:</label>
+                    <input class="adv-search-field" name="as_eq" placeholder="" type="text">
+                    <span class ="adv-deskonly-label">Put a minus sign before words you don't want: -<b>goblins</b>, -<b>"Cooties"</b></span>
+
+                </div>
+
+            </div>
+
+
+            <div class="search-buttons-wrapper go">
+                <button class="adv-search-button" type="submit">
+                    Advanced Search
+                </button>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>
