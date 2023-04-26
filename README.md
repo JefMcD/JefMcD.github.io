@@ -42,7 +42,7 @@ search field input name =
 "as_q" (All Words)
 "as_eq" (Exact Words)
 "as_oq" (This word OR that word)
-"as_eq" (As exact words but with minus sign ie "-blue")
+"as_eq" (As exact words but Google inserts a minus sign ie "-blue")
 
 
 IfeelLuckyGoogle.html
